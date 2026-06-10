@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora de Productividad MeliAir — Linehaul</title>
+<title>Calculadora de Produtividade MeliAir — Linehaul</title>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -97,23 +97,23 @@ input[type="number"]:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(44
     <div class="logo-mark">
       <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="6.5" r="3.5" fill="#F5E97A"/><path d="M2.5 17.5c0-4.142 3.358-7.5 7.5-7.5s7.5 3.358 7.5 7.5" stroke="#F5E97A" stroke-width="2.2" stroke-linecap="round"/></svg>
     </div>
-    <div><div class="logo-name">Mercado Libre</div><div class="logo-sub">Herramientas Internas</div></div>
+    <div><div class="logo-name">Mercado Livre</div><div class="logo-sub">Ferramentas Internas</div></div>
   </a>
   <div class="header-right">
-    <a class="btn-back" href="https://mtmtransportes-meliairlinehaulbres.vercel.app/">← Volver</a>
-    <a class="lang-link" href="https://mtmtransportes-meliairlinehaulpt.vercel.app/">🇧🇷 Português</a>
-    <span class="badge">MTM — Productividad MeliAir · Linehaul</span>
+    <a class="btn-back" href="https://mtmtransportes-meliairlinehaulpt.vercel.app/">← Voltar</a>
+    <a class="lang-link" href="https://mtmtransportes-meliairlinehaulbres.vercel.app/">🇲🇽 Español</a>
+    <span class="badge">MTM — Produtividade MeliAir · Linehaul</span>
   </div>
 </header>
 <div class="hero">
-  <div class="hero-tag">Productividad Operacional · MeliAir</div>
+  <div class="hero-tag">Produtividade Operacional · MeliAir</div>
   <div class="hero-title-wrap">
     <div class="hero-ml-icon">
       <svg viewBox="0 0 26 26" fill="none"><path d="M3 13 L23 13" stroke="#F5E97A" stroke-width="2" stroke-linecap="round"/><path d="M14 6 L23 13 L14 20" stroke="#F5E97A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 9 L11 13 L8 17" stroke="#F5E97A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
-    <h1>Calculadora de Productividad MeliAir — Linehaul</h1>
+    <h1>Calculadora de Produtividade MeliAir — Linehaul</h1>
   </div>
-  <p>Completa los datos operacionales. La calculadora muestra la productividad MTM esperada (pcts/h por puesto) para cada subproceso: descarga de camión, traslado en autoelevador, armado de carrito, armado de láminas y rep en armado.</p>
+  <p>Preencha os dados operacionais. A calculadora mostra a produtividade MTM esperada (pcts/h por posto) para cada subprocesso de descarga de caminhão, traslado de empilhadeira, armação de lâminas e rep na montagem.</p>
 </div>
 <div class="container">
 <div class="layout">
@@ -121,13 +121,13 @@ input[type="number"]:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(44
 <div class="card">
   <div class="card-header">
     <div class="card-icon">📋</div>
-    <div><h2>Datos de Operación</h2><p>Parámetros del ciclo Linehaul (MLB) — carga de avión a partir de camión</p></div>
+    <div><h2>Dados de Operação</h2><p>Parâmetros do ciclo Linehaul (MLM) — carga de avião a partir de caminhão</p></div>
   </div>
   <div class="card-body">
-    <div class="sec-label">Volumen y Capacidades</div>
+    <div class="sec-label">Volume e Capacidades</div>
     <div class="field-row">
       <div class="field">
-        <label>Paquetes por camión <span class="hint">(pcts)</span></label>
+        <label>Pacotes por caminhão <span class="hint">(pcts)</span></label>
         <input type="number" id="pctsPorCamion" value="3000" min="100" oninput="calcular()">
       </div>
       <div class="field">
@@ -145,96 +145,96 @@ input[type="number"]:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(44
       <div class="field">
         <label>SPP Gaylord <span class="hint">(pcts/gaylord)</span></label>
         <input type="number" id="sppGaylord" value="190" min="1" oninput="calcular()">
-        <div class="field-note">Ref. MLB: 190 pcts/gaylord.</div>
+        <div class="field-note">Ref. MLM: 190 pcts/gaylord.</div>
       </div>
     </div>
     <div class="field-row">
       <div class="field">
-        <label>SPP Granel Manga <span class="hint">(pcts/lám)</span></label>
+        <label>SPP Granel Manga <span class="hint">(pcts/lâm)</span></label>
         <input type="number" id="sppGranelManga" value="200" min="1" oninput="calcular()">
-        <div class="field-note">Total de pcts por lámina de manga granel. Afecta: <strong>Rep bajo lámina Manga</strong>.</div>
+        <div class="field-note">Total de pcts por lâmina de manga granel. Afeta: <strong>Rep sob lâmina Manga</strong>.</div>
       </div>
       <div class="field">
-        <label>SPP Granel Gaylord <span class="hint">(pcts/lám)</span></label>
+        <label>SPP Granel Gaylord <span class="hint">(pcts/lâm)</span></label>
         <input type="number" id="sppGranelGaylord" value="380" min="1" oninput="calcular()">
-        <div class="field-note">Total de pcts por lámina de gaylord granel. Afecta: <strong>Rep bajo/sobre lámina Gaylord</strong> y <strong>Rep Escalera</strong>.</div>
+        <div class="field-note">Total de pcts por lâmina de gaylord granel. Afeta: <strong>Rep sob/sobre lâmina Gaylord</strong> e <strong>Rep Escada</strong>.</div>
       </div>
     </div>
     <hr class="divider">
-    <div class="sec-label">Distancias Operacionales</div>
+    <div class="sec-label">Distâncias Operacionais</div>
     <div class="field-row">
       <div class="field">
         <label>Dist. docas → staging/buffer <span class="hint">(m)</span></label>
         <input type="number" id="distDescarga" value="30" min="1" oninput="calcular()">
-        <div class="field-note">Afecta: <strong>Descarga camión AE</strong>. Ref. MTM: 30 m.</div>
+        <div class="field-note">Afeta: <strong>Descarga caminhão AE</strong>. Ref. MTM: 30 m.</div>
       </div>
       <div class="field">
-        <label>Dist. staging → posición lámina <span class="hint">(m)</span></label>
+        <label>Dist. staging → posição lâmina <span class="hint">(m)</span></label>
         <input type="number" id="distAE" value="30" min="1" oninput="calcular()">
-        <div class="field-note">Afecta: <strong>Traslado Manga/Gaylord AE</strong>. Ref. MTM: 30 m.</div>
+        <div class="field-note">Afeta: <strong>Traslado Manga/Gaylord AE</strong>. Ref. MTM: 30 m.</div>
       </div>
     </div>
     <div class="field-row">
       <div class="field">
         <label>Dist. traslado Gaylord G <span class="hint">(m)</span></label>
         <input type="number" id="distGF" value="35" min="1" oninput="calcular()">
-        <div class="field-note">Afecta: <strong>Gaylord G autoelevador</strong>. Ref. MTM: 35 m.</div>
+        <div class="field-note">Afeta: <strong>Gaylord G empilhadeira</strong>. Ref. MTM: 35 m.</div>
       </div>
       <div class="field">
-        <label>Dist. traslado remolcador <span class="hint">(m)</span></label>
+        <label>Dist. traslado rebocador <span class="hint">(m)</span></label>
         <input type="number" id="distRebo" value="30" min="1" oninput="calcular()">
-        <div class="field-note">Afecta: <strong>Gaylord remolcador</strong> (referencial). Ref. MTM: 30 m.</div>
+        <div class="field-note">Afeta: <strong>Gaylord rebocador</strong> (referencial). Ref. MTM: 30 m.</div>
       </div>
     </div>
   </div>
 </div>
 <div class="premissas-wrap">
   <button class="premissas-btn" onclick="toggleRef()">
-    📋 Capacidades MTM de referencia (valores en distancias estándar)
+    📋 Capacidades MTM de referência (valores em distâncias padrão)
     <span id="refArrow">▼</span>
   </button>
   <div class="premissas-body" id="refBody">
-    <div class="prem-item"><div class="prem-key">Descarga camión AE @30m</div><div class="prem-val">1,52 camiones/h</div></div>
-    <div class="prem-item"><div class="prem-key">Manga AE @30m</div><div class="prem-val">11,0 lám/h</div></div>
-    <div class="prem-item"><div class="prem-key">Gaylord AE @30m</div><div class="prem-val">11,0 lám/h</div></div>
-    <div class="prem-item"><div class="prem-key">Gaylord G autoelevador @35m</div><div class="prem-val">6,67 lám/h</div></div>
-    <div class="prem-item"><div class="prem-key">Gaylord remolcador @30m</div><div class="prem-val">35,4 lám/h</div></div>
-    <div class="prem-item"><div class="prem-key">Armado de carrito</div><div class="prem-val">389 pcts/hh</div></div>
-    <div class="prem-item"><div class="prem-key">Set up láminas</div><div class="prem-val">19,78 lám/h</div></div>
-    <div class="prem-item"><div class="prem-key">Rep bajo lámina (Manga)</div><div class="prem-val">2,66 lám/h</div></div>
-    <div class="prem-item"><div class="prem-key">Rep sobre lámina (Manga)</div><div class="prem-val">1,98 lám/h</div></div>
-    <div class="prem-item"><div class="prem-key">Rep bajo lámina (Gaylord)</div><div class="prem-val">1,40 lám/h</div></div>
-    <div class="prem-item"><div class="prem-key">Rep sobre lámina (Gaylord)</div><div class="prem-val">1,13 lám/h</div></div>
-    <div class="prem-item"><div class="prem-key">Rep Granel (abajo)</div><div class="prem-val">532 pcts/hh</div></div>
-    <div class="prem-item"><div class="prem-key">Rep Granel (arriba)</div><div class="prem-val">429 pcts/hh</div></div>
-    <div class="prem-item"><div class="prem-key">Rep Escalera (Gaylord)</div><div class="prem-val">1,09 lám/h</div></div>
+    <div class="prem-item"><div class="prem-key">Descarga caminhão AE @30m</div><div class="prem-val">1,52 caminhões/h</div></div>
+    <div class="prem-item"><div class="prem-key">Manga AE @30m</div><div class="prem-val">11,0 lâm/h</div></div>
+    <div class="prem-item"><div class="prem-key">Gaylord AE @30m</div><div class="prem-val">11,0 lâm/h</div></div>
+    <div class="prem-item"><div class="prem-key">Gaylord G empilhadeira @35m</div><div class="prem-val">6,67 lâm/h</div></div>
+    <div class="prem-item"><div class="prem-key">Gaylord rebocador @30m</div><div class="prem-val">35,4 lâm/h</div></div>
+    <div class="prem-item"><div class="prem-key">Montagem carrito</div><div class="prem-val">389 pcts/hh</div></div>
+    <div class="prem-item"><div class="prem-key">Set up lâminas</div><div class="prem-val">19,78 lâm/h</div></div>
+    <div class="prem-item"><div class="prem-key">Rep sob lâmina (Manga)</div><div class="prem-val">2,66 lâm/h</div></div>
+    <div class="prem-item"><div class="prem-key">Rep sobre lâmina (Manga)</div><div class="prem-val">1,98 lâm/h</div></div>
+    <div class="prem-item"><div class="prem-key">Rep sob lâmina (Gaylord)</div><div class="prem-val">1,40 lâm/h</div></div>
+    <div class="prem-item"><div class="prem-key">Rep sobre lâmina (Gaylord)</div><div class="prem-val">1,13 lâm/h</div></div>
+    <div class="prem-item"><div class="prem-key">Rep Granel (sob)</div><div class="prem-val">532 pcts/hh</div></div>
+    <div class="prem-item"><div class="prem-key">Rep Granel (sobre)</div><div class="prem-val">429 pcts/hh</div></div>
+    <div class="prem-item"><div class="prem-key">Rep Escada (Gaylord)</div><div class="prem-val">1,09 lâm/h</div></div>
   </div>
 </div>
 </div>
 <div class="results-sticky">
   <div class="card">
     <div class="result-header">
-      <div class="r-label">Productividad por Subproceso</div>
+      <div class="r-label">Produtividade por Subprocesso</div>
       <div class="r-title">MeliAir — Linehaul</div>
     </div>
     <div class="res-kpis">
-      <div class="kpi hl"><div class="kpi-val" id="kpiDesc">—</div><div class="kpi-lbl">Camiones/h (descarga)</div></div>
-      <div class="kpi hl"><div class="kpi-val" id="kpiMangaAE">—</div><div class="kpi-lbl">Lám/h Manga AE</div></div>
+      <div class="kpi hl"><div class="kpi-val" id="kpiDesc">—</div><div class="kpi-lbl">Caminhões/h (descarga)</div></div>
+      <div class="kpi hl"><div class="kpi-val" id="kpiMangaAE">—</div><div class="kpi-lbl">Lâm/h Manga AE</div></div>
       <div class="kpi"><div class="kpi-val" id="kpiRepSobreG">—</div><div class="kpi-lbl">Pcts/h Rep sobre Gaylord</div></div>
-      <div class="kpi"><div class="kpi-val" id="kpiCarrito">—</div><div class="kpi-lbl">Pcts/hh Armado carrito</div></div>
+      <div class="kpi"><div class="kpi-val" id="kpiCarrito">—</div><div class="kpi-lbl">Pcts/hh Montagem carrito</div></div>
     </div>
     <div class="res-table-wrap">
       <div id="tableContainer">
-        <div class="empty-state"><div class="empty-icon">📊</div><p>Completa los datos operacionales para ver la productividad de cada subproceso.</p></div>
+        <div class="empty-state"><div class="empty-icon">📊</div><p>Preencha os dados operacionais para ver a produtividade de cada subprocesso.</p></div>
       </div>
     </div>
   </div>
   <div style="margin-top:10px;background:white;border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:11px;color:var(--gray);line-height:1.7">
-    <strong style="color:var(--dark)">Leyenda:</strong><br>
-    <span class="tag-fixed">MTM FIJO</span> Capacidad constante — no depende de distancias.<br>
-    <span class="tag-fixed tag-var">VARIABLE</span> Recalculado según las distancias ingresadas.<br>
-    <span class="tag-info">INFO</span> Referencial — capacidad de transporte/traslado.<br>
-    <span class="tag-bottleneck">CUELLO BOT.</span> Subproceso limitante del grupo.
+    <strong style="color:var(--dark)">Legenda:</strong><br>
+    <span class="tag-fixed">MTM FIXO</span> Capacidade constante — não depende de distâncias.<br>
+    <span class="tag-fixed tag-var">VARIÁVEL</span> Recalculado conforme distâncias informadas.<br>
+    <span class="tag-info">INFO</span> Referencial — capacidade de transporte/traslado.<br>
+    <span class="tag-bottleneck">GARGALO</span> Subprocesso limitante do grupo.
   </div>
 </div>
 </div>
@@ -246,12 +246,12 @@ var FIXED_MANGA=189.00, RATE_MANGA=4*(SFISM+SFILM);
 var FIXED_GF=272.52, RATE_GF=7.632;
 var FIXED_REBO=73.61, RATE_REBO=2*EFIM;
 var CAP_ARM_CARR=1.295;
-var CAP_REP_BAJO_M=2.659, CAP_REP_SOBRE_M=1.981;
-var CAP_REP_BAJO_G=1.400, CAP_REP_SOBRE_G=1.128;
-var CAP_REP_GRAN_ABAJO=532, CAP_REP_GRAN_ARRIBA=429;
+var CAP_REP_SOBM=2.659, CAP_REP_SOBRM=1.981;
+var CAP_REP_SOBG=1.400, CAP_REP_SOBRG=1.128;
+var CAP_REP_GRAN_SOB=532, CAP_REP_GRAN_SOBR=429;
 var CAP_REP_ESC=1.087;
 function n(id){return parseFloat(document.getElementById(id).value)||0;}
-function fmt(v){if(v==null||isNaN(v)||v<=0)return'—';return Math.round(v).toLocaleString('es');}
+function fmt(v){if(v==null||isNaN(v)||v<=0)return'—';return Math.round(v).toLocaleString('pt-BR');}
 function fmt2(v){if(v==null||isNaN(v)||v<=0)return'—';return v.toFixed(2);}
 function calcular(){
   var ppcam=n('pctsPorCamion'),sppC=n('sppCarrito'),sppMA=n('sppMangaAir'),sppGY=n('sppGaylord');
@@ -268,42 +268,42 @@ function calcular(){
   var phGF=lamGF*sppGY*4;
   var lamRebo=3600/(FIXED_REBO+D4*RATE_REBO);
   var phArmCarrito=CAP_ARM_CARR*sppC/2;
-  var phRepBajoM=CAP_REP_BAJO_M*sppGM, phRepSobreM=CAP_REP_SOBRE_M*sppGM;
-  var phRepBajoG=CAP_REP_BAJO_G*sppGG, phRepSobreG=CAP_REP_SOBRE_G*sppGG;
+  var phRepSobM=CAP_REP_SOBM*sppGM, phRepSobrM=CAP_REP_SOBRM*sppGM;
+  var phRepSobG=CAP_REP_SOBG*sppGG, phRepSobrG=CAP_REP_SOBRG*sppGG;
   var phRepEsc=CAP_REP_ESC*sppGG;
   document.getElementById('kpiDesc').textContent=fmt2(camHora);
   document.getElementById('kpiMangaAE').textContent=fmt2(lamMangaAE);
-  document.getElementById('kpiRepSobreG').textContent=fmt(phRepSobreG);
+  document.getElementById('kpiRepSobreG').textContent=fmt(phRepSobrG);
   document.getElementById('kpiCarrito').textContent=fmt(phArmCarrito);
   var grupos=[
-    {grp:'✈️  Descarga de Camión',rows:[
-      {nome:'Descarga camión AE',tipo:'var',cap:fmt2(camHora)+' camiones/h',ph:phDescCam,bottleneck:true}]},
-    {grp:'🤖  Traslado a Lámina — Autoelevador',rows:[
-      {nome:'Manga Air AE (4 un/viaje)',tipo:'var',cap:fmt2(lamMangaAE)+' lám/h',ph:phMangaAE},
-      {nome:'Gaylord AE (4 un/viaje)',tipo:'var',cap:fmt2(lamGaylAE)+' lám/h',ph:phGaylAE}]},
+    {grp:'✈️  Descarga de Caminhão',rows:[
+      {nome:'Descarga caminhão AE',tipo:'var',cap:fmt2(camHora)+' caminhões/h',ph:phDescCam,bottleneck:true}]},
+    {grp:'🤖  Traslado à Lâmina — Empilhadeira',rows:[
+      {nome:'Manga Air AE (4 un/viagem)',tipo:'var',cap:fmt2(lamMangaAE)+' lâm/h',ph:phMangaAE},
+      {nome:'Gaylord AE (4 un/viagem)',tipo:'var',cap:fmt2(lamGaylAE)+' lâm/h',ph:phGaylAE}]},
     {grp:'🏭  Traslado Gaylord',rows:[
-      {nome:'Gaylord G autoelevador (4 un/viaje)',tipo:'var',cap:fmt2(lamGF)+' lám/h',ph:phGF},
-      {nome:'Gaylord remolcador',tipo:'var',cap:fmt2(lamRebo)+' lám/h',ph:null,info:true}]},
-    {grp:'📦  Armado de Carrito',rows:[
-      {nome:'Armado de carrito (2 personas)',tipo:'fijo',cap:fmt2(CAP_ARM_CARR)+' carrito/h',ph:phArmCarrito}]},
-    {grp:'⚙️  Set up Láminas',rows:[
-      {nome:'Set up láminas',tipo:'fijo',cap:'19,78 lám/h',ph:null}]},
-    {grp:'🔧  Armado de Láminas — Rep en Armado',rows:[
-      {nome:'Rep bajo lámina — Manga',tipo:'fijo',cap:'2,66 lám/h',ph:phRepBajoM},
-      {nome:'Rep sobre lámina — Manga',tipo:'fijo',cap:'1,98 lám/h',ph:phRepSobreM,bottleneck:true},
-      {nome:'Rep bajo lámina — Gaylord',tipo:'fijo',cap:'1,40 lám/h',ph:phRepBajoG},
-      {nome:'Rep sobre lámina — Gaylord',tipo:'fijo',cap:'1,13 lám/h',ph:phRepSobreG,bottleneck:true},
-      {nome:'Rep Granel (abajo)',tipo:'fijo',cap:'532 pcts/hh',ph:CAP_REP_GRAN_ABAJO},
-      {nome:'Rep Granel (arriba)',tipo:'fijo',cap:'429 pcts/hh',ph:CAP_REP_GRAN_ARRIBA},
-      {nome:'Rep Escalera (Gaylord)',tipo:'fijo',cap:'1,09 lám/h',ph:phRepEsc}]}
+      {nome:'Gaylord G empilhadeira (4 un/viagem)',tipo:'var',cap:fmt2(lamGF)+' lâm/h',ph:phGF},
+      {nome:'Gaylord rebocador',tipo:'var',cap:fmt2(lamRebo)+' lâm/h',ph:null,info:true}]},
+    {grp:'📦  Montagem de Carrito',rows:[
+      {nome:'Montagem carrito (2 pessoas)',tipo:'fijo',cap:fmt2(CAP_ARM_CARR)+' carrito/h',ph:phArmCarrito}]},
+    {grp:'⚙️  Set up Lâminas',rows:[
+      {nome:'Set up lâminas',tipo:'fijo',cap:'19,78 lâm/h',ph:null}]},
+    {grp:'🔧  Armação Lâminas — Rep na Montagem',rows:[
+      {nome:'Rep sob lâmina — Manga',tipo:'fijo',cap:'2,66 lâm/h',ph:phRepSobM},
+      {nome:'Rep sobre lâmina — Manga',tipo:'fijo',cap:'1,98 lâm/h',ph:phRepSobrM,bottleneck:true},
+      {nome:'Rep sob lâmina — Gaylord',tipo:'fijo',cap:'1,40 lâm/h',ph:phRepSobG},
+      {nome:'Rep sobre lâmina — Gaylord',tipo:'fijo',cap:'1,13 lâm/h',ph:phRepSobrG,bottleneck:true},
+      {nome:'Rep Granel (sob)',tipo:'fijo',cap:'532 pcts/hh',ph:CAP_REP_GRAN_SOB},
+      {nome:'Rep Granel (sobre)',tipo:'fijo',cap:'429 pcts/hh',ph:CAP_REP_GRAN_SOBR},
+      {nome:'Rep Escada (Gaylord)',tipo:'fijo',cap:'1,09 lâm/h',ph:phRepEsc}]}
   ];
-  var html='<table class="res-table animate"><thead><tr><th>Subproceso</th><th>Capacidad</th><th>pcts/h</th></tr></thead><tbody>';
+  var html='<table class="res-table animate"><thead><tr><th>Subprocesso</th><th>Capacidade</th><th>pcts/h</th></tr></thead><tbody>';
   grupos.forEach(function(g){
     html+='<tr class="group-hdr"><td colspan="3">'+g.grp+'</td></tr>';
     g.rows.forEach(function(r){
-      var t=r.tipo==='var'?'<span class="tag-fixed tag-var">VARIABLE</span>':'<span class="tag-fixed">MTM FIJO</span>';
+      var t=r.tipo==='var'?'<span class="tag-fixed tag-var">VARIÁVEL</span>':'<span class="tag-fixed">MTM FIXO</span>';
       if(r.info)t+='<span class="tag-info">INFO</span>';
-      if(r.bottleneck)t+='<span class="tag-bottleneck">CUELLO BOT.</span>';
+      if(r.bottleneck)t+='<span class="tag-bottleneck">GARGALO</span>';
       var ph=r.info?'<span style="color:var(--gray);font-size:10px">— traslado</span>':r.ph==null?'<span style="color:var(--gray)">— setup</span>':fmt(r.ph);
       html+='<tr><td>'+r.nome+' '+t+'</td><td><span style="font-size:10px;color:var(--gray)">'+r.cap+'</span></td><td>'+ph+'</td></tr>';
     });
